@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@media all and (min-width:0px) and (max-width:999px){
+    
+    html.open_menu,
+    html.open_menu body,
+    html.lock,
+    html.lock body{ overflow: hidden;}
+    .width_con{ width: calc(100% - var(--margin-x2));}
+    
+
+    
+    
+    .v_con.middle li.cells > img.ratio{ display: none;}
+    .v_con.middle li.cells .title_con{ position: relative; top: auto; transform: none; text-align: center;}
+    .v_con.middle li.cells .title_con h4:before{ left: 50%; margin-left: calc(var(--margin-half) * -1);}
+    
+    
+    
+
+    .nav_cover {position: fixed; content: ''; top:0; left: 100%; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0); -webkit-backdrop-filter: blur(0); backdrop-filter: blur(0); transition: all .25s ease-out, left 0s .25s; pointer-events: none; z-index: 99;}
+    html.open_menu .nav_cover {left: 0; background: rgba(0, 0, 0, .5); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); pointer-events: auto; transition: all .25s ease-out, left 0s;}
+    
+    html.open_menu #header.section_00 .width_con .btn_home img.bi.short { filter: blur(4px); pointer-events: none;}
+    #header.section_00 .width_con .btn_home img.bi.short { display: block; transition: filter .25s ease-out;}
+    #header.section_00 .width_con .btn_home img.bi { display: none;}
+    
+    
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li,
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav_customer li{ transform: translateX(0); opacity: 1; filter: blur(0);}
+    
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(1){transition-delay: 250ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(2){transition-delay: 300ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(3){transition-delay: 350ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(4){transition-delay: 400ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(5){transition-delay: 450ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(6){transition-delay: 500ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(7){transition-delay: 550ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(8){transition-delay: 600ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav li:nth-child(9){transition-delay: 650ms;}
+    
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav_customer li:nth-child(1){transition-delay: 700ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav_customer li:nth-child(2){transition-delay: 750ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav_customer li:nth-child(3){transition-delay: 800ms;}
+    html.open_menu #header.section_00 .width_con .nav_con ul.nav_customer li:nth-child(4){transition-delay: 850ms;}
+    
+    
+    
+    
+    #header.section_00{height: 60px;}
+    #header.section_00 .width_con .btn_home{width: 40px;}
+    #header.section_00 .width_con .btn_home img.bi{display: none;}
+    #header.section_00 .width_con .btn_home img.bi.short{display: block; transition: filter .25s ease-out;}
+    html.open_menu #header.section_00 .width_con .btn_home img.bi.short{ filter: blur(4px); pointer-events: none;}
+    #header.section_00 .width_con .nav_con {position: fixed; top:0; right: -240px; width: 240px; height: 100vh; min-height: 560px; padding: 0 40px; box-sizing: border-box; background: #000 url(../img/drmartens_logo_o.svg) 50% 40px no-repeat; background-size: 160px; box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); transition: all .25s ease-out;}
+    html.open_menu #header.section_00 { background: rgba(0, 0, 0, 0); box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0);}
+    html.open_menu #header.section_00 .width_con .nav_con { right: 0; box-shadow: 10px 0 30px 10px rgba(0, 0, 0, .5);}
+    #header.section_00 .width_con .nav_con > i{position: absolute; display: block; width: 40px; height: 40px; top: 10px; left: calc(var(--margin) * -1 - 40px); color: #fff22d; text-align: right; line-height: 40px; font-size: 32px; transition: inherit;}
+    html.open_menu #header.section_00 .width_con .nav_con > i{left: -40px; }
+    #header.section_00 .width_con .nav_con > i.fa-bars,
+    html.open_menu #header.section_00 .width_con .nav_con > i.fa-times{ opacity: 1;}
+    html.open_menu #header.section_00 .width_con .nav_con > i.fa-bars,
+    #header.section_00 .width_con .nav_con > i.fa-times{ opacity: 0; text-align: left;}
+    
+    #header.section_00 .width_con .nav_con ul li a {display: block; width: 160px;}
+    #header.section_00 .width_con .nav_con ul.nav li,
+    #header.section_00 .width_con .nav_con ul.nav_customer li{ display: block; float: initial; margin: var(--margin) 0 0 0; transform: translateX(20px); opacity: 0; filter: blur(4px); transition: all 500ms ease-out;}
+    #header.section_00 .width_con .nav_con ul.nav {top: 155px; right: auto; left: 40px; height: calc(100vh - 420px); min-height: 80px; max-height: 300px; overflow-y: auto;}
+    #header.section_00 .width_con .nav_con ul.nav_customer { top: auto; bottom: 40px; right: auto; left: 40px; background: #000;}
+    #header.section_00 .width_con .nav_con ul.nav_customer li:nth-child(4) {margin-left: 0; margin-top: var(--margin-x2);}
+    #header.section_00 .width_con .nav_con ul.nav_customer li:nth-child(4):before { top: calc(var(--margin) * -1); left: 0; height: 1px; width: 100%;}
+    #header.section_00 .width_con .nav_con ul.nav_customer li:last-child { padding-bottom: var(--margin);}
+    
+    
+    #visual.section_01{ margin-top: 60px;}
+
+    
+    
+    
+    #collabo.section_03 .width_con .title_con{ max-width: 50%;}
+    #collabo.section_03 .width_con ul.brands li.brand.slick-slider h4{ font-weight: 400;}
+    
+
+    
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li.cells .full { position: fixed; width: 100%; height: 100%; z-index: 998;}
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li.cells .full img{-webkit-mask-image: linear-gradient(180deg, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%);
+    mask-image: linear-gradient(180deg, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);}
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li.cells:hover .full { opacity: 0;}
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li.cells.show .full { opacity: 1; pointer-events: auto;}
+    
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li .full > div.close_btn{ position: absolute; top: var(--margin); right: var(--margin); display: block; z-index: 999;}
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li .full > div.close_btn > i{ position: absolute; top: 0; right: 50%; background: #ffe512; padding: 0 10px; border-radius: 10px; font-size: 30px; color: #000; line-height: 40px;}
+    
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li.cells .full > div.text_box{ bottom: 50%;}
+    
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li.cells .full > div.text_box h4 {
+font-size: 36px; font-weight: 600; color: #ffe512;}
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li.cells .full > div.text_box h5 {
+font-size: 14px; font-weight: 400;}
+    #footwear.section_04 .width_con .v_con > .cells > .v_con li.cells .full > div.text_box h5:before { position:absolute; content: ''; top: calc(var(--margin-half) * -.725); left: 0; width: var(--margin); height: 3px; background: #ffe512;}
+
+}
+
+@media all and (min-width:0px) and (max-width:479px){
+    :root{
+        --margin-half: 10px;
+    }
+    .title_con h1{font-size: 36px;}
+    .title_con h2{font-size: 28px;}
+    .title_con h3{font-size: 14px;}
+    #collabo .brands .brand .slick-list .slick-track .brand_text > h4,
+    .title_con h4{font-size: 11px;}
+    .footer_copy > li,
+    .company > li,
+    .title_con h5{font-size: 10px;}
+    .title_con h6{font-size: 9px;}
+    .v_con.four_con {}
+    .v_con.three_con > li.cells,
+    .v_con.four_con > li.cells,
+    .v_con.six_con > li.cells,
+    .v_con.four_con.slick-slider > .slick-list > .slick-track > li.cells.slick-slide{ width: calc(50% - var(--margin));}
+    
+    .width_con .v_con.two_con > li.cells{ width: calc(100% - var(--margin));}
+    
+    
+    .pulse-bubble { font-size: 20px;}
+    
+    #strategy.section_02 .width_con .v_con li.cells .bottom_text h5{ font-size: 10px;}
+    #strategy.section_02 .width_con .v_con li.cells .bottom_text h6{ font-size: 9px;}
+    
+ 
+    #heritage.section_07 .width_con .v_con #history > div .text_box > h4{font-size: 10px;}
+    #heritage.section_07 .width_con .v_con #history > div .text_box > p{font-size: 9px;}
+    
+    #sustainability.section_08 .width_con .v_con li.cells .third_text > li.cells{ width: calc(100% - var(--margin));}
+    #sustainability.section_08 .width_con .v_con li.cells .third_text > li.cells .text_box h2{ font-size: 60px;}
+    #sustainability.section_08 .width_con .v_con li.cells .third_text > li.cells .text_box h3{ font-size: 28px;}
+    #sustainability.section_08 .width_con .v_con li.cells .third_text > li.cells .text_box p{ font-size: 18px; margin-top: 18px;}
+}
+@media all and (min-width:480px) and (max-width:599px){
+    :root{
+        --margin-half: 12.5px;
+    }
+    .title_con h1{font-size: 36px;}
+    .title_con h2{font-size: 28px;}
+    .title_con h3{font-size: 14px;}
+    #collabo .brands .brand .slick-list .slick-track .brand_text > h4,
+    .title_con h4{font-size: 11px;}
+    .footer_copy > li,
+    .company > li,
+    .title_con h5{font-size: 10px;}
+    .title_con h6{font-size: 9px;}
+    .v_con.four_con {}
+    .v_con.three_con > li.cells,
+    .v_con.four_con > li.cells,
+    .v_con.six_con > li.cells,
+    .v_con.four_con.slick-slider > .slick-list > .slick-track > li.cells.slick-slide{ width: calc(50% - var(--margin));}
+    
+    .width_con .v_con.two_con > li.cells{ width: calc(100% - var(--margin));}
+    
+    
+    .pulse-bubble { font-size: 20px;}
+    
+    
+    #strategy.section_02 .width_con .v_con li.cells .bottom_text h5{ font-size: 11px;}
+    #strategy.section_02 .width_con .v_con li.cells .bottom_text h6{ font-size: 10px;}
+    
+    
+    #heritage.section_07 .width_con .v_con #history > div .text_box > h4{font-size: 11px;}
+    #heritage.section_07 .width_con .v_con #history > div .text_box > p{font-size: 10px;}
+    
+    #sustainability.section_08 .width_con .v_con li.cells .third_text > li.cells { width: calc(33.33% - var(--margin));}
+    #sustainability.section_08 .width_con .v_con li.cells .third_text > li.cells .text_box p { font-size: 11px;}
+}
+
+@media all and (min-width:600px) and (max-width:999px){
+    :root{
+        --margin-half: 15px;
+    }
+    .title_con h1{font-size: 60px;}
+    .title_con h2{font-size: 48px;}
+    .title_con h3{font-size: 22px;}
+    #collabo .brands .brand .slick-list .slick-track .brand_text > h4,
+    .title_con h4{font-size: 12px;}
+    .footer_copy > li,
+    .company > li,
+    .title_con h5{font-size: 11px;}
+    .title_con h6{font-size: 10px;}
+    
+    .width_con .v_con.two_con > li.cells{ width: calc(100% - var(--margin));}
+    
+    
+    .pulse-bubble { font-size: 30px;}
+    
+    
+    #strategy.section_02 .width_con .v_con li.cells { width: calc(50% - var(--margin-x2));}#strategy.section_02 .width_con .v_con li.cells .bottom_text h5{ font-size: 11px;}
+    #strategy.section_02 .width_con .v_con li.cells .bottom_text h6{ font-size: 10px;}
+    
+    
+    #footwear.section_04 .width_con .two_con > li.cells{ width: calc(100% - var(--margin));}
+
+    
+    #category.section_06 .width_con .six_con > li.cells{ width: calc(33.33% - var(--margin));}
+    
+    #heritage.section_07 .width_con .v_con #history > div .text_box > h4{font-size: 11px;}
+    #heritage.section_07 .width_con .v_con #history > div .text_box > p{font-size: 10px;}
+    
+    
+    #sustainability.section_08 .width_con .v_con li.cells .third_text > li.cells .text_box p { font-size: 11px;}
+
+}
+@media all and (min-width:1000px) and (max-width:1239px){
+    :root{
+        --margin-half: 17.5px;
+    }
+    .width_con{  width: 1000px;}
+    .title_con h1{font-size: 80px;}
+    .title_con h2{font-size: 60px;}
+    .title_con h3{font-size: 28px;}
+    #collabo .brands .brand .slick-list .slick-track .brand_text > h4,
+    .title_con h4{font-size: 16px;}
+    .footer_copy > li,
+    .company > li,
+    .title_con h5{font-size: 12px;}
+    .title_con h6{font-size: 11px;}
+    
+    
+    #strategy.section_02 .width_con .v_con li.cells .bottom_text h5{ font-size: 11px;}
+    #strategy.section_02 .width_con .v_con li.cells .bottom_text h6{ font-size: 10px;}
+
+}
+@media all and (min-width:1240px) and (max-width:1449px){
+    .width_con{  width: 1200px;}
+}
+@media all and (min-width:1450px){
+    
+}
